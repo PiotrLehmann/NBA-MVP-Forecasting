@@ -13,7 +13,7 @@ This metric was used because the number of voting experts varies each year, maki
 Due to the strong imbalance in the dataset with respect to the MVP Votes Share, the Random Forest model was chosen for its robustness to such imbalance. Additionally, this model does not require normalization or standardization of the data, which simplified the interpretation and evaluation of the results.
 
 ## Dataset
-Available under [Kaggle - Clear Dataset](https://www.kaggle.com/datasets/piotrlehmannml/clear-dataset/data) contains NBA player statistics from the 2001–2023 seasons, prepared for training and testing machine learning models. Data was collected and merged from four types of tables available on Basketball Reference: per-game stats, advanced stats, cumulative stats, and team standings. Whole data collection and preparation process was fully done by me.
+Available under [Kaggle - Clear Dataset](https://www.kaggle.com/datasets/piotrlehmannml/clear-dataset/data) contains NBA player statistics from the 2001–2023 seasons, prepared for training and testing machine learning models. Data was collected and merged from four types of tables available on Basketball Reference: per-game stats, advanced stats, cumulative stats, and team standings. Whole data collection and preparation process was fully done by me. The final test dataset (containing only stats form 2024-2025 season) is available [here](https://www.kaggle.com/datasets/piotrlehmannml/final-nba-tester/data). Note that is was downloaded 06.12.2024.
 
 Key preparation steps:
 - Collected data from 23 seasons, focusing on recent years to capture up-to-date patterns,
