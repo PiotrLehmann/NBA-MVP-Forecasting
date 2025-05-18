@@ -1,5 +1,7 @@
 # NBA MVP Forecasting
 
+<img src="https://github.com/user-attachments/assets/b3cbcc2a-783e-4380-b56f-92ebc0482e9c" width="600"/>
+
 ## Description
 Code: [nba-mvp-forecasting.ipynb](https://github.com/PiotrLehmann/NBA-MVP-Forecasting/blob/a7a7164f88e1649cb52a3a364613d31966c157d1/nba-mvp-forecasting.ipynb)
 </br>
@@ -30,7 +32,7 @@ Key preparation steps:
 - Applied threshold filtering on the training set by removing players with zero MVP vote share who did not meet minimum statistical criteria,
 
 ## My Own Predictor
-A custom evaluation metric was developed for the model based on Ranked Biased Overlap (RBO), which measures similarity between rankings with emphasis on top positions. This metric compares the predicted ranking of the top 5 players with the actual ranking for each season. It evaluates how well the model orders players rather than precisely predicting their MVP Votes Share values, which are affected by data imbalance. Using RBO significantly improved the model’s ability to forecast the MVP winner. Finally, this metric was used to create a predictor that evaluates the model on a scale from 0 to 1, where 1 represents a perfect match of the REAL season’s ranking.
+A custom evaluation metric was developed for the model based on RBO - Ranked Biased Overlap (easily explained [here](https://changyaochen.github.io/Comparing-two-ranked-lists/)), which measures similarity between rankings with emphasis on top positions. This metric compares the predicted ranking of the top 5 players with the actual ranking for each season. It evaluates how well the model orders players rather than precisely predicting their MVP Votes Share values, which are affected by data imbalance. Using RBO significantly improved the model’s ability to forecast the MVP winner. Finally, this metric was used to create a predictor that evaluates the model on a scale from 0 to 1, where 1 represents a perfect match of the REAL season’s ranking.
 
 ## Results
 As a result of training various models and identifying the most effective one, forecasts for the NBA Most Valuable Player (MVP) were generated for each season since the year 2000 [➡️ To this file](documents/best_model_prediction_results.pdf), where green color means right prediction / red means bad prediction. In addition, the remaining four MVP contenders were also predicted in order to later compare the results with predictions made by the NBA organization itself.
