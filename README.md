@@ -6,7 +6,7 @@
 Code: [nba-mvp-forecasting.ipynb](https://github.com/PiotrLehmann/NBA-MVP-Forecasting/blob/a7a7164f88e1649cb52a3a364613d31966c157d1/nba-mvp-forecasting.ipynb)
 </br>
 </br>
-The project focuses on applying machine learning methods to predict the results of the **NBA Most Valuable Player (MVP)** voting. The main goal was to develop a tool that, based on the statistics of all players in a given season, forecasts the ranking of the top 5 players as well as the predicted MVP winner. Value which model is predicting is called **MVP Votes Share**. The MVP Votes Share indicates the proportion of votes received by a player out of all possible MVP votes in a given season. It is calculated using the formula:
+This project focuses on applying machine learning methods to predict the results of the **NBA Most Valuable Player (MVP)** voting. The main goal was to develop a tool that, based on the statistics of all players in a given season, forecasts the ranking of the top 5 players as well as the predicted MVP winner. Value which model is predicting is called **MVP Votes Share**. The MVP Votes Share indicates the proportion of votes received by a player out of all possible MVP votes in a given season. It is calculated using the formula:
 
 **MVS = PV / TGV**
 where:  
